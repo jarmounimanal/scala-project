@@ -5,5 +5,7 @@ import org.apache.spark.sql.DataFrame
 trait Processor {
 
   def process(inputDF: DataFrame) : DataFrame
+  def countRows(dataFrame: DataFrame): DataFrame
+  def sum(dataFrame: DataFrame, columnName: String): DataFrame
 
 }
